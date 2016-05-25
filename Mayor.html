@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sonda Holland Business Education-Index 5</title>
+
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+ 
+// LIST OF Images
+path[0] = "Images/vashon bldg.jpg";
+path[1] = "Images/vashon text.jpg";
+path[2] = "Images/vashon wolverine.jpg";
+path[3] = "Images/vashonFront.jpg";
+path[4] = "Images/VSide.jpg";
+path[5] = "Images/Septisha.jpg";
+function swapImage()
+{
+   document.slide.src = path[i];
+   if(i < path.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",3000);
+}
+window.onload=swapImage;
+</script>
+<img height="200" name="slide" src="image_1.gif" width="400" />
+<style>
+<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+html  {
+  overflow: hidden; 
+  height: 100%; 
+  background: #bcbdc7;
+}
+body {
+  overflow: auto;
+  height: 100%;
+  width: 1100px;
+  margin: 0 auto; /* center */
+  padding:0;
+  border: 1px solid #474747;
+  border-width: 0 3px;
+  background: #fff;
+  font-family:Arial, Helvetica, sans-serif;
+}          
+/*reduced the size of the background image height*/
+#container-header {
+  float:left; egs
+  background:url(Images/vashon.jpg);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height:800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+#container-header h1{
+  width: auto;
+  height: 20px;
+  padding-bottom:5px;
+  text-align: center;
+  color: #0000FF; 
+}
+
+.row{
+  width:auto;
+  float: left;
+  height: auto;
+}
+.container {
+  width:505px;
+  margin: 10px 12px;
+  padding: 5px; 
+  float:left; 
+  background:#fff;
+  border: 3px solid #663333;
+}
+
+  h2, h3, h4, h5, h6{
+  width: auto;
+  height: 20px;
+  padding-bottom:5px;
+  text-align: center;
+  background-color: #660000;
+  color: #ffff00; 
+}
+
+/*adjsted width to cover entire screen, got background color from header image*/
+#address{
+  float:left;
+  width:1100px;
+  padding:0px;
+  background: url(Images/nav-space.jpg);
+  background-repeat: no-repeat;
+  margin:0px;
+
+}
+/*button image in the list attibute only*/
+#address li{
+  float:left;
+  width:150px;
+  height: 75px;
+  display:block;
+  padding:0px 3px 0px 0px;
+  background:url(Images/vashon bldg.jpg);
+  background-repeat: no-repeat;
+  text-decoration:none;
+  list-style:none;
+  text-align: center;
+      
+}
+/*removed background image and added padding top to move the text content. increased font to 16px made bolder with text align*/
+#address li a{
+  float:left;
+  width:150px;
+  padding-top: 33px;
+  height: 75px;
+  color:#00F;
+  font-size:16px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration:none;
+  list-style:none;
+}
+/*background hover image is here */
+#address li a:hover{
+  float:left;
+  width:150px;
+  height: 75px;
+  padding-top: 33px;
+  height: 75px;
+  color:#00F;
+  font-size:16px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration:none;
+  list-style:none;
+  background:url(Images/fry-button.jpg);
+  background-repeat: no-repeat;
+ 
+}
+/*removed image from here and added border to the top because padding pushed the border behind the image*/
+#address li a.active{
+  float:left;
+  width: 150px;
+  padding-top: 33px;
+  margin: 0px;
+  height: 75px;
+  color:#00F;
+  font-size:16px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration:none;
+  list-style:none;
+  border-top: 3px solid yellow;
+}
+img{
+  float: left;
+  margin: 10px 25px;
+  border: #00F;
+  text-align: right;
+}
+footer{
+  width: 100%;
+  height: 120px;
+  clear: both;
+  padding:5px;
+  color: #663333;
+  
+}
+
+footer ul{
+  text-align: center;
+}
+/*effects the background image*/
+footer li{
+  float:left;
+  width:125px;
+  height:70px;
+  display:block;
+  padding:15px 0px 0 25px;
+  text-decoration:none;
+  list-style:none;
+}
+footer p{
+  text-align: center;
+  font-weight: bolder;
+}
+/*Added background image and added padding top to move the text content. increased font to 16px made bolder with text align* Had a smaller image to fit extra fries so used bg pos center*/
+footer li a{
+  float:left;
+  width:125px;
+  padding: 35px 0 0 10px;
+  height: 70px;
+  background: url(Images/fries-button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color:#663333;
+  font-size:18px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration:none;
+  list-style:none;
+}
+/*background hover image is here */
+footer li a:hover{
+  float:left;
+  width:125px;
+  height: 70px;
+  padding-top: 35px;
+  color:#00F;
+  font-size:18px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration:none;
+  list-style:none;
+}
+
+</style>
+
+
+
+<form name="Tick">
+<input type="text" size="12" name="Clock">
+</form>
+ 
+<script type="text/javascript">
+function show(){
+    var Digital=new Date()
+    var hours=Digital.getHours()
+    var minutes=Digital.getMinutes()
+    var seconds=Digital.getSeconds()
+    var dn="AM"
+    if (hours>12){
+        dn="PM"
+        hours=hours-12
+        //this is so the hours written out is in 12-hour format, instead of the default //24-hour format.
+    }
+    if (hours==0)
+        hours=12
+    //this is so the hours written out when hours=0 (meaning 12a.m) is 12
+    if (minutes<=9)
+        minutes="0"+minutes
+    if (seconds<=9)
+        seconds="0"+seconds
+    document.Tick.Clock.value=
+    hours+":"+minutes+":"+seconds+" "+dn
+    setTimeout("show()",1000)
+}
+    show()
+</script>
+
+</head>
+
+
+
+
+
+<body>
+
+<body onload="rotate();swapImage()">
+
+<ul id="address">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="index1.html">Index 1</a></li>
+                <li><a href="index2.html">Index 2</a></li>
+                <li><a href="index3.html">Index 3</a></li>
+                <li><a href="index4.html">Index 4</a></li>
+                <li><a class="active" href="index4.html">Index 5</a></li>
+                <li><a href="#">Top</a></li>
+            </ul></div>
+
+
+
+<div class="row">
+<h2>Google Drive</h2>
+<div class="sign"><img src='images/google.jpg' alt='blinking!' id='blinking_image' /></div>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+var img = document.getElementById('blinking_image');
+
+var interval = window.setInterval(function(){
+    if(img.style.visibility == 'hidden'){
+        img.style.visibility = 'visible';
+    }else{
+        img.style.visibility = 'hidden';
+    }
+}, 1000); //the 1000 here is milliseconds and determines how often the interval should be run.
+</script>
+</div>
+
+<div id="container-header">
+<h1>Sonda Holland Business Education</h1>
+<img src="Images/vashon bldg.jpg" alt="Poster 1">
+</div>
+<div class="row">
+<div class="container">
+<h2>Advanced Microsoft Applications</h2>
+<img src="Images/vashon bldg.jpg" alt="Poster 1">
+ 
+<p>In this class, students will learn design techniques to produce various documents.  We will use the Microsoft Word, Excel, PowerPoint, and Access  programs, but the techniques can be used for any Desktop Publishing software.
+We will be using some expensive equipment and you are responsible for it when it is in your possession.  
+Be responsible and treat it with respect. This course involves a lot of creating and a lot of playing with programs to develop ideas.  You must use patience and be willing to wait for the teacher or someone else to help you.  You must be responsible to wait in an appropriate behavior—not playing games on the computer!  You must also be willing to help others!
+Projects may be graded for completion or by rubric.  All work will be placed in a portfolio for final evaluation.  Projects will include business cards, teacher door signs, teacher notepads, menu, newsletter, calendars, flyers, certificates, newsletters, brochures, and various other projects.
+ </p>
+
+ <p>To ensure a smooth, well-functioning classroom environment, the following rules are necessary for students in Microsoft Applications class:
+When class starts or I am giving instructions, you should be in your seats and attentive.  Students may move freely around the lab to help others and sharpen pencils only.
+Students must bring all required materials to class
+Cheating on a quiz, test or assignment is against school rules.  You will be given a zero and a discipline referral will be sent to the office. 
+Students should take responsibility for workspace.  Clean up after yourself.
+Make-up work must be completed within two days of absences. It is the student’s responsibility to check and get the work done.  This must be done on the student’s own time and not during class.  Please refer to Edmodo.com for assignments and projects.
+We do use a textbook however; you will take no books with you.  We will use the internet for other resources as instructed by the teacher.
+If you have any questions or comments don’t hesitate to ask the teacher during class or after class.  The goal for the school year is “Teaching and Learning”.
+</p>
+</div>
+
+
+<div class="container">
+<h2>Desktop Publishing</h2>
+<img src="Images/VSide.jpg" alt="Poster 2">
+ 
+<p>In this class, students will learn design techniques to produce various documents.  We will use the Word and Publisher, but the techniques can be used for any Desktop Publishing software.
+We will be using some expensive equipment and you are responsible for it when it is in your possession.  Be responsible and treat it with respect. This course involves a lot of creating and a lot of playing with programs to develop ideas.  You must use patience and be willing to wait for the teacher or someone else to help you.  You must be responsible to wait in an appropriate behavior—not playing games on the computer!  You must also be willing to help others!
+Projects may be graded for completion or by rubric.  All work will be placed in a portfolio for final evaluation.  Projects will include business cards, bookmarks, teacher notepads, menu, newsletter, calendars, and various other projects.
+</p>
+
+<p>To ensure a smooth, well-functioning classroom environment, the following rules are necessary for students in Desktop Publishing class:
+When class starts or I am giving instructions, you should be in your seats and attentive.  Students may move freely around the lab to help others and sharpen pencils only.
+Students must bring all required materials to class
+Cheating on a quiz, test or assignment is against school rules.  You will be given a zero and a discipline referral will be sent to the office. 
+Students should take responsibility for workspace.  Clean up after yourself.
+Make-up work must be completed within two days of absences. It is the student’s responsibility to check and get the work done.  This must be done on the student’s own time and not during class.  Please refer to Edmodo.com for assignments and projects.
+We do use a textbook however; you will take no books with you.  We will use the internet for other resources as instructed by the teacher.
+If you have any questions or comments don’t hesitate to ask the teacher during class or after class.  The goal for the school year is “Teaching and Learning”.
+</p>
+
+</div>
+</div>
+
+<div class="row">
+<h2>TJX YBI Program</h2>
+
+ <p><img src="Images/IMG_5573.jpg" alt="Poster 1"><iframe width="550" height=450" margin=-left="5px"padding="5px" src="<iframe width="854" height="480" src="https://www.youtube.com/embed/MsTCsmqkezQ" frameborder="0" allowfullscreen></iframe>" frameborder="0" allowfullscreen></iframe></p>
+ <p>YBI is an innovative 11-session professional development program taught by
+TJX Associates and Associates from our local brands: T.J. Maxx, Marshalls
+and HomeGoods. YBI helps high school students:</P
+<UL>
+<LI>Develop a positive work ethic</LI>
+<LI>Learn about careers in the retail business</LI>
+<LI>Prepare them for entry into the workforce</LI>
+<LI>Network with business leaders within their community</LI>
+<LI>Provide opportunities for jobs and college scholarships.</LI>
+
+YBI teaches job and life skills, including: Budgeting, Resume Building,
+Interview Preparation, Career Exploration through Job Shadow Days
+and a Dress for Success Fashion Show. The program culminates with
+a ceremony which recognizes and rewards each participant for their
+achievement. Jobs are awarded and scholarships are announced to
+those who receive them. </p>
+
+<UL>
+<LI>SESSION 1: Welcome, Introductions & Program Overview</LI>
+<LI> SESSION 2: Earning a Living</LI>
+<LI>SESSION 3: Time Management & Resumes</LI>
+<LI>SESSION 4: Networking & Job Search</LI>
+<LI>SESSION 5: Applications</LI>
+<LI>Session 5A: Fashion Show Pre-work</LI>
+<LI>SESSION 6: Dressing for Success Fashion Show</LI>
+<LI>Session 6A: Dress for Success Field Trip</LI>
+<LI>SESSION 7: Introduction to Merchandising & Buying</LI>
+<LI>SESSION 8: Interview Preparation
+<LI>SESSION 9: Interviews</LI>
+<LI>Session 9A: Interview Thank You Notes</LI>
+<LI>SESSION 10: Keeping Your Job</LI>
+<LI>SESSION 11: Job Shadowing</LI>
+</UL>
+
+ <p>I want to share the good news about our students who had the opportunity to participate in a leadership, personal development, and professional development program where TJX associates facilitated the 11 sessions.  The session topics were; Earning a Living, Time Management & Resume Writing, Networking & Job Search, Applications & Fashion Show Pre-work, Dressing for Success, How to Keep Your Job, Interview Preparation, Interviews, and Job Shadowing.  The students accomplished so much by participating in the Youth Business Institute (YBI) program.</p>
+<hr>
+</div>
+
+<div class="row">
+<h2>YWCA Entrepreneurship Elevator Pitch and Business Plan Presentation</h2>
+
+ <p><img src="Images/Vashon text.jpg" alt="Poster 2">Business Plan Competition Performance Prompts
+
+For the Business Plan Competition please have students select one of the following prompts to apply to their business concept.  I have given descriptions of each prompt.  They will be judged only in the category of their selected prompt.
+
+
+Marketing Plan
+
+The Marketing Plan should contain the following components:
+ 
+1: Situation Analysis
+This is an introductory section that gives an overview of the issue or problem your business is addressing as it exists today. Begin with a short description of your current product or service offering, the marketing advantages and challenges you face, and possible threats posed by your competitors.
+ 
+2: Target Audience
+Give a clear description of your target audiences and a target-audience profile based on demographics, age, gender and any other important characteristics.  
+
+3: Strategies and Tactics
+
+Your tactics section should include all the steps you plan to take for advertising, public relations, direct mail, and special promotions. You can use a paper calendar to give an example of your strategy and tactic schedule or spreadsheet program or anything that you feel is a clear example of your marketing strategy. 
+
+
+PUBLIC SERVICE ANNOUNCEMENT 
+A public service announcement (PSA) or public service ad, are messages to the public disseminated by the media without charge to raise interest,  awareness, and change public attitudes and behavior towards a social issue.  The PSA should also suggest a way to solve the problem.
+
+SOCIAL MEDIA CAMPAIGN
+Create a social media campaign to market your new business idea.  You must use at least three sources of social media (e.g., Twitter, Facebook, Instagram, Pinterest, etc.).  Identify your target audience.  Your business concept must be clear in your Social Media message. This can also include website design for your business idea.
+
+MOBILE APPLICATION DEVELOPMENT
+Create an App for your business for users to interact and use your service or business. Show the usefulness and ease of the app. Describe how it will be used and/or the goal of the app.   You should also include website information (web address, etc.)
+</p>
+
+ <UL>
+<LI>Executive Summary:  Tell a story about why you came up with the idea. Start with a compelling statement that will catch the attention of the reader or listener.</LI>
+<LI>Business Description</LI>
+<LI>Market  and Competitive Analysis</LI>
+<LI>Competitive Analysis</LI>
+</UL>
+
+<hr>
+</div>
+
+<div class="row">
+<h2>Business Education TSA Testing</h2>
+
+ <p><img src="Images/Rotunda.jpg" alt="Poster 3">NOCTI TSA test 4 out of 8 passed</p>
+
+ <p>Microsoft Office Certification Exam</p>
+
+ <p>Articulation Agreement and Dual Credit Classes with STLCC - Advanced Microsoft Applications and Web Design
+</p>
+<hr>
+</div>
+
+
+<div class="row">
+<h2>Google Drive</h2>
+<div class="sign"><img src='images/google.jpg' alt='blinking!' id='blinking_image' /></div>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+var img = document.getElementById('blinking_image');
+
+var interval = window.setInterval(function(){
+    if(img.style.visibility == 'hidden'){
+        img.style.visibility = 'visible';
+    }else{
+        img.style.visibility = 'hidden';
+    }
+}, 2000); //the 1000 here is milliseconds and determines how often the interval should be run.
+</script>
+</div>
+
+<div class="row">
+<h2>Student Business Organization</h2>
+
+ <p><img src="Images/FBLA Crest.jpg" alt="Poster 3">Future Business Leaders of America-Phi Beta Lambda, Inc. (FBLA-PBL) is the largest career student organization in the world. Each year, FBLA-PBL helps over 200,000 members prepare for careers in business.
+
+</p>
+
+ <p>The mission is to bring business and education together in a positive working relationship through innovative leadership and career development programs.</p>
+
+ <p>FBLA-PBL organizes conferences and seminars for members and advisers. These programs are designed to help members develop their business leadership, networking, career development, and social skills.</p>
+</div>
+
+<footer>
+<p>Business Education &copy; Sonda Holland 2016</p>
+<ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="index1.html">Index 1</a></li>
+                <li><a href="index2.html">Index 2</a></li>
+                <li><a href="index3.html">Index 3</a></li>
+                <li><a href="index4.html">Index 4</a></li>
+                <li><a href="index5.html">Index 5</a></li>
+                <li><a href="#">Top</a></li>
+            </ul>
+
+</footer>
+<script type="text/javascript"></script>
+</body>
+</html>
+
+
