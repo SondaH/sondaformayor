@@ -11,7 +11,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
-  /*Good content*/
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -48,7 +47,7 @@
       font-size: 50px;
   }
   .logo {
-      color: #f4511e;
+      color: #FF00FF;
       font-size: 200px;
   }
   .thumbnail {
@@ -189,6 +188,39 @@
         font-size: 150px;
     }
   }
+  
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+ 
+// LIST OF Images
+path[0] = "Images/louie.jpg";
+path[1] = "Images/heart.jpg";
+path[2] = "Images/govote.jpg";
+path[3] = "Images/blog.jpg";
+path[4] = "Images/evote.jpg";
+path[5] = "Images/america.jpg";
+path[6] = "Images/voter.jpg";
+path[7] = "Images/vote.jpg";
+path[8] = "Images/vote1.jpg";
+path[9] = "Images/thisweek.jpg";
+function swapImage()
+{
+   document.slide.src = path[i];
+   if(i < path.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",3000);
+}
+window.onload=swapImage;
+</script>
+<img height="200" name="slide" src="image_1.gif" width="400" />
+<style>
+<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+html  {
+  overflow: hidden; 
+  height: 100%; 
+  background: #bcbdc7;
+}
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -216,7 +248,7 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Vote Sonda Holland fo Mayor</h1> 
+  <h1>Vote Sonda Holland for Mayor</h1> 
   <p>Saint Louis, Missouri</p> 
   <form class="form-inline">
     <input type="email" class="form-control" size="50" placeholder="Email Address" required>
@@ -237,7 +269,7 @@ Now that the decision is final, the City invites the community to engage in the 
       <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+      <span class="glyphicon glyphicon-qrcode logo"></span>
     </div>
   </div>
 </div>
@@ -245,7 +277,7 @@ Now that the decision is final, the City invites the community to engage in the 
 <div class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      <span class="glyphicon glyphicon-education logo slideanim"></span>
     </div>
     <div class="col-sm-8">
       <h2>My Values</h2><br>
@@ -304,21 +336,21 @@ Now that the decision is final, the City invites the community to engage in the 
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
+        <img src="vote1.jpg" alt="vote1" width="400" height="300">
+        <p><strong>Vote</strong></p>
         <p>Yes, we built Paris</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <img src="america.jpg" alt="america" width="400" height="300">
         <p><strong>New York</strong></p>
         <p>We built New York</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <img src="vote.jpg" alt="vote" width="400" height="300">
         <p><strong>San Francisco</strong></p>
         <p>Yes, San Fran is ours</p>
       </div>
@@ -344,6 +376,49 @@ Now that the decision is final, the City invites the community to engage in the 
       </div>
       <div class="item">
         <h4>"The Greatest and Latest"<br><span style="font-style:normal;">Muhammad Ali</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<h2>Vote for Sonda Holland for Mayor</h2>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img_vote.jpg" alt="vote" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img_america.jpg" alt="america" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img_vote1.jpg" alt="vote1" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img_louie.jpg" alt="louie" width="460" height="345">
       </div>
     </div>
 
@@ -531,4 +606,5 @@ $(document).ready(function(){
 
 </body>
 </html>
+
 
